@@ -3,10 +3,10 @@ import './globals.css'
 import Head from 'next/head';
 export default function layout({children}:any) {
   return (
-    <html>
+    <html lang='eng'>
       <body>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico"/>
         
       </Head>
         {children}
