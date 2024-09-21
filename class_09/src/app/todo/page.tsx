@@ -29,7 +29,7 @@ export default function page() {
       </button>
       {
   todos.map((todo: any, index: number) => {
-    return  <Todo key={index} data={todo} removeTodo={removeTodo} />;
+    return  <Todo key={index} todo={todo} removeTodo={removeTodo} />;
   })
 }
 
