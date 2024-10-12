@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function PostCard({postData}:any) {
-   
+export default function PostCard(props:any) {
+   const{postData}=props
   return (
     <div>
     <div className="flex">

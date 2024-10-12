@@ -36,14 +36,15 @@ function setID(e:any) {
   setUserID(e.target.value)
 }
 
-const PostData=async()=>{
-
+const PostData=async(e:any)=>{
+  // e.preventDefault(); 
   const newUser=
   {
     id:userId,
     name:usersName,
-    age:userAge,
-    email:usersEmail
+    email:usersEmail,
+    age:userAge
+    
   }
 const requestBacked= await fetch(`http://localhost:3000/Api/users/`, {
   method:'POST',
